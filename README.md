@@ -57,5 +57,9 @@ int modG = baseG + int(12 * sinf(colorTime * 1.2f));
 int modB = baseB + int(15 * sinf(colorTime * 0.9f));
 ```
 
+### Acknowledgments
+
+This project uses the olcPixelGameEngine by [OneLoneCoder (javidx9)](https://github.com/OneLoneCoder/olcPixelGameEngine),  
+distributed under the [OLC-3 License](https://github.com/OneLoneCoder/olcPixelGameEngine/blob/master/license.txt).
 
 
