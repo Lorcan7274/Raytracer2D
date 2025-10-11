@@ -274,7 +274,7 @@ public:
 
 		if (GetMouse(2).bHeld) {
 			int i = ((int)source_y / (int)block_width * world_width + (int)source_x / (int)block_width);
-			world[i].cell_exist = !world[i].cell_exist;
+			world[i].cell_exist = false;
 		}
 
 		ConvertTileMapToPolyMap(0, 0, 40, 30, block_width, world_width);
@@ -348,8 +348,8 @@ if (p.a > 0)
 
 		
 		int redTint = int(100 * brightness);
-		int greenTint = int(150 * brightness);
-		int blueTint = int(200 * brightness);
+		int greenTint = int(230 * brightness);
+		int blueTint = int(255 * brightness);
 
 		
 		float intensity = p.r / 255.0f;
@@ -392,18 +392,19 @@ if (p.a > 0)
 				}
 			}
 		}
-		static float colorTime = 0.0f;
-		colorTime += fElapsedTime * 1.5f; 
+static float colorTime = 0.0f;
+colorTime += fElapsedTime * 1.5f; 
 
 
-int baseR = 50;   
-int baseG = 70;   
-int baseB = 60;  
+int baseR = 35;   
+int baseG = 50;   
+int baseB = 65;  
 
 
-int modR = baseR + int(5 * sinf(colorTime * 0.7f));
-int modG = baseG + int(8 * sinf(colorTime * 0.5f));
-int modB = baseB + int(4 * sinf(colorTime * 0.9f));
+int modR = baseR + int(4 * sinf(colorTime * 0.5f));   // subtle red drift
+int modG = baseG + int(12 * sinf(colorTime * 1.2f));  // strong green pulse
+int modB = baseB + int(15 * sinf(colorTime * 0.9f));  // smooth blue wave
+
 
 olc::Pixel dynamicWallColor(
     std::clamp(modR, 0, 255),
