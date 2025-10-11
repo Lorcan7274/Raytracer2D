@@ -1,0 +1,84 @@
+# ========================
+# Visual Studio / C++ .gitignore
+# ========================
+
+# Build results
+[Bb]in/
+[Oo]bj/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Bb]uild/
+[Bb]uildOutput/
+[Ll]og/
+
+# Compiled binaries
+*.exe
+*.dll
+*.lib
+*.app
+*.pdb
+*.idb
+*.ilk
+*.obj
+*.iobj
+*.ipdb
+
+# Intermediate files
+*.pch
+*.aps
+*.ncb
+*.suo
+*.sdf
+*.cachefile
+*.lastbuildstate
+*.tlog
+*.log
+*.tmp
+
+# Visual Studio settings and cache
+.vs/
+*.user
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+*.vscode/
+
+# CMake / MSBuild temp
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# Package directories
+packages/
+.nuget/
+*.nupkg
+
+# Python (if you ever run scripts)
+__pycache__/
+*.pyc
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+*.DS_Store
+
+# Project-specific
+Debug/
+Release/
+*.log
+*.bak
+*.orig
+
+# Your local assets — keep only what you want
+# Uncomment below if you want to ignore large assets (like textures):
+# assets/
+
+# ========================
+# End
+# ========================
