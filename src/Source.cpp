@@ -343,7 +343,7 @@ if (p.a > 0)
         
         
 
-       
+		// Change light source brightness / glow / colour here 
 		float brightness = 0.6f + 0.1f * sinf(totalTime * 1.6f); 
 
 		
@@ -395,15 +395,15 @@ if (p.a > 0)
 static float colorTime = 0.0f;
 colorTime += fElapsedTime * 1.5f; 
 
-
+// Change block gradient and colour here
 int baseR = 35;   
 int baseG = 50;   
 int baseB = 65;  
 
 
-int modR = baseR + int(4 * sinf(colorTime * 0.5f));   // subtle red drift
-int modG = baseG + int(12 * sinf(colorTime * 1.2f));  // strong green pulse
-int modB = baseB + int(15 * sinf(colorTime * 0.9f));  // smooth blue wave
+int modR = baseR + int(4 * sinf(colorTime * 0.5f));   
+int modG = baseG + int(12 * sinf(colorTime * 1.2f));  
+int modB = baseB + int(15 * sinf(colorTime * 0.9f)); 
 
 
 olc::Pixel dynamicWallColor(
