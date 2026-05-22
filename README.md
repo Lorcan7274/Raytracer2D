@@ -1,7 +1,6 @@
 <h1 align="center">Raytracer2D</h1>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c834f71d-ffa6-4aa9-8eea-777cd3f05f26" width="420" alt="Raytracer demo 1">
   <img src="https://github.com/user-attachments/assets/0d9a9cbf-58a3-4e0d-8459-0f6df2a3829d" width="420" alt="Raytracer demo 2">
 </p>
 
