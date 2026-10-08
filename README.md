@@ -11,9 +11,28 @@
 
 
 ## Controls
-- **Left Click** : Add blocks  
-- **Right Click [hold]** : Turn on light source  
-- **Middle Mouse Button** : Remove blocks  
+Press **H** (or **F1**) in the app to show or hide the controls.
+
+| Action | Mouse / trackpad | Keyboard |
+| --- | --- | --- |
+| Move cursor / light | Move the mouse | Arrow keys or WASD |
+| Light source | Right Click [hold] | Space or L (toggle) |
+| Add blocks | Left Click | Enter [hold] |
+| Remove blocks | Middle Mouse Button, or Shift + Left Click | Backspace or Delete [hold] |
+
+Everything can be done from the keyboard, so you don't need a mouse. When you use the keyboard, the cell under the cursor is outlined in yellow. Blocks can only be placed inside the outer wall, and the outer wall itself can't be removed.
+
+## Building
+
+**Visual Studio (Windows):** open `Raytracer2D.sln`, pick `x64` or `x86`, and press F5.
+
+**Linux:** install the X11, OpenGL and libpng development packages, then from the repository root run:
+```sh
+g++ -std=c++17 -O2 -I. src/Source.cpp -o Raytracer2D -lX11 -lGL -lpthread -lpng
+./Raytracer2D
+```
+
+The program looks for `assets/light_cast.png` relative to where it's run from, including the Visual Studio output folders. If it can't find the file, it generates a matching light texture.
 
 
 ### How it works
